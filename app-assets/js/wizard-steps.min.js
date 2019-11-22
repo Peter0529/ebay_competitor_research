@@ -1,0 +1,1 @@
+!function(t,e,i){"use strict";i(e).ready(function(){i(".icons-tab-steps").steps({headerTag:"h6",bodyTag:"fieldset",transitionEffect:"fade",titleTemplate:'<span class="step">#index#</span> #title#',labels:{finish:"Submit"},onFinished:function(t,e){alert("Form submitted.")}}),i(".pickadate").pickadate()})}(window,document,jQuery);

@@ -1,0 +1,143 @@
+// Analytics Dashboard CSS
+.ct-grid{
+    stroke-dasharray: 0px;
+    stroke: rgba(0, 0, 0, 0.1);
+}
+
+.ct-label{
+    font-size: 0.9rem;
+}
+
+//widget Line Chart CSS Starts
+ 
+.WidgetAreaChart .ct-series-a .ct-area {
+    fill-opacity: 1;
+}
+
+.WidgetAreaChart .ct-series-a .ct-line{
+    stroke-width: 0px;
+}
+
+
+.WidgetAreaChart .ct-series-a .ct-point-circle {     
+    stroke-width:5;stroke: #fff; 
+ }
+ 
+ .WidgetAreaChart .ct-series-a .ct-point-circle-transperent {     
+    fill: transparent;
+ }
+
+ .WidgetAreaChart .ct-target-line {
+    stroke: #fff;
+    stroke-width: 2px;
+    stroke-dasharray: 4px;
+  }
+
+  .WidgetAreaChartshadow {
+    -webkit-filter: drop-shadow( 0px -5px 2px rgba(0,0,0,0.2) );
+            filter: drop-shadow( 0px -5px 2px rgba(0,0,0,0.2) ); /* Same syntax as box-shadow, except 
+                                                       for the spread property */
+}
+
+//widget Line Chart CSS Ends
+
+//widget Line Chart 1 CSS Starts
+.WidgetAreaChart1 .ct-series-a .ct-area {
+    fill:url(#Wlinear) !important;
+}
+.WidgetAreaChart1 .ct-series-a .ct-point-circle {     
+    fill:#fa394e;
+ }
+
+//widget Line Chart 1 CSS Ends
+
+//widget Line Chart 2 CSS Starts
+.WidgetAreaChart2 .ct-series-a .ct-area {
+    fill:url(#Wlinear2) !important;
+}
+.WidgetAreaChart2 .ct-series-a .ct-point-circle {     
+    fill:#6d3da7;
+ }
+
+//widget Line Chart 2 CSS Ends
+
+//widget Line Chart 3 CSS Starts
+
+.WidgetAreaChart3 .ct-series-a .ct-area {
+    fill:url(#Wlinear3) !important;
+}
+.WidgetAreaChart3 .ct-series-a .ct-point-circle {     
+    fill:#6d64f3;
+ }
+//widget Line Chart 3 CSS Ends
+
+
+//Line chart 2 CSS Starts
+.lineChart2{
+  .ct-series{
+    &.ct-series-a{
+      .ct-line { stroke: url(#lineGradient1) !important; stroke-width: 3px; }
+      .ct-circle{fill:url(#lineGradient1) !important;stroke-width:3;stroke:#fff;}
+    }
+
+    &.ct-series-b{
+      .ct-line { stroke: url(#lineGradient2) !important; stroke-width: 3px; }
+      .ct-circle{fill:url(#lineGradient2) !important;stroke-width:3;stroke:#fff;}
+    }
+  }
+}
+.lineChart2Shadow {
+    -webkit-filter: drop-shadow( 0px 14px 4px rgba(0,0,0,0.2) );
+            filter: drop-shadow( 0px 14px 4px rgba(0,0,0,0.2) ); /* Same syntax as box-shadow, except 
+                                                       for the spread property */
+}
+//Line chart 2 CSS Ends
+
+
+// Line Area Chart CSS Starts
+.lineAreaChart{
+  .ct-point-circle-transperent {     
+    fill: transparent;
+  }
+  .ct-series-a{
+    .ct-area {
+      fill-opacity: 0.7;
+      fill:url(#laGradient1) !important;
+    }
+    .ct-line { stroke-width: 0; }
+    .ct-point-circle{fill:url(#laGradient1) !important;stroke-width:3;stroke:#fff;}
+  }
+  .ct-series-b{
+    .ct-area {
+      fill-opacity: 0.9;
+      fill:url(#laGradient) !important;
+    }
+    .ct-line { stroke-width: 0; }
+    .ct-point-circle{fill:transparent;stroke-width:0;}
+  }
+}
+.lineAreaChartShadow{
+  -webkit-filter: drop-shadow( 0px -8px 4px rgba(0,0,0,0.2) );
+          filter: drop-shadow( 0px -8px 4px rgba(0,0,0,0.2) ); /* Same syntax as box-shadow, except for the spread property */
+
+}
+// Line Area Chart CSS Ends
+
+
+// LineArea Chart 6 CSS Starts
+.lineArea6 .ct-series-a .ct-area {
+    fill-opacity: 1;
+    fill:url(#gradient6) !important;
+}
+.lineArea6 .ct-series.ct-series-a .ct-line { stroke: url(#linear6) !important; stroke-width: 13px; }
+.lineArea6 .ct-series.ct-series-a .ct-point-circle{fill:url(#linear6) !important;stroke-width:5;stroke:#fff;}
+.lineArea6 .ct-series-a .ct-point-circle-transperent {     
+   fill: transparent;
+}
+.lineArea6Shadow{
+  -webkit-filter: drop-shadow( 0px -8px 4px rgba(0,0,0,0.2) );
+          filter: drop-shadow( 0px -8px 4px rgba(0,0,0,0.2) ); /* Same syntax as box-shadow, except 
+                                                       for the spread property */
+
+}
+// LineArea Chart 6 CSS Ends

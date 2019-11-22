@@ -1,0 +1,125 @@
+// Chartist chart modification
+.ct-area {
+    stroke: none;
+    fill-opacity: 0.1;
+}
+
+.ct-grid{
+    stroke-dasharray: 0px;
+    stroke: rgba(0, 0, 0, 0.1);
+}
+
+.ct-label{
+    font-size: 0.9rem;
+}
+
+// Line with Area Chart 1 CSS Starts
+.lineArea1{
+  .ct-series{
+    &.ct-series-a{
+      .ct-area { fill: #09d8d5;}
+      .ct-line {  stroke-width: 5px;stroke:#09d8d5; }
+      .ct-circle{stroke-width:5;stroke:#fff; fill:#09d8d5;}
+      .ct-circle-transperent{fill:transparent;stroke-width:0}
+    }
+  }
+}
+.lineArea1Shadow {
+    -webkit-filter: drop-shadow( 0px 20px 6px rgba(0,0,0,0.3) );
+            filter: drop-shadow( 0px 20px 6px rgba(0,0,0,0.3) ); /* Same syntax as box-shadow, except 
+                                                       for the spread property */
+}
+// Line with Area Chart 1 CSS Ends
+
+// Line with Area Chart 2 CSS Starts
+
+.lineArea2{
+  .ct-point-circle {
+    stroke-width: 2px;
+    fill: white;
+  }
+  .ct-line {
+    fill: none;
+    stroke-width: 1px;
+  }
+  .ct-series{
+    &.ct-series-a{
+      .ct-area { fill: #FF9149 !important; fill-opacity: 0.2 }
+      .ct-line { stroke: #FF9149 !important; stroke-width: 3px; }
+      .ct-circle{fill:#FF9149 !important;stroke-width:5;stroke:#fff !important;}
+      .ct-point-circle { stroke: #31afb2; }
+    }
+    &.ct-series-b{
+      .ct-area { fill: #1E9FF2 !important;fill-opacity: 0.1; }
+      .ct-line { stroke: #1E9FF2 !important; stroke-width: 3px; }
+      .ct-circle{ fill:#1E9FF2 !important;stroke-width:5;stroke:#fff;}
+      .ct-point-circle { stroke: #ff8d60;}
+    }
+  }
+}
+
+
+// Line with Area Chart 2 CSS Ends
+
+// Line with Area Chart 3 CSS Starts
+
+.lineArea3 .ct-series-a .ct-area {
+  fill: #FF4961;
+}
+.lineArea3 .ct-line{
+  stroke: #FF4961;
+  stroke-width: 3px;
+}
+.lineArea3 .ct-point {
+  stroke-width: 0px;
+}
+.lineArea3 .ct-circle{fill:#FF4961;stroke-width:5;stroke:#fff;}
+
+// Line with Area Chart 3 CSS Ends
+
+// line Chart 1 CSS Starts
+
+.lineChart1 .ct-line {
+  fill: none;
+  stroke-width: 3px;
+  stroke: none;
+}
+
+.lineChart1 .ct-point {
+  stroke-width: 0px;
+}
+
+.lineChart1Shadow {
+  -webkit-filter: drop-shadow( 0px 20px 6px rgba(0,0,0,0.3) );
+    filter: drop-shadow( 0px 20px 6px rgba(0,0,0,0.3) ); /* Same syntax as box-shadow, except for the spread property */
+}
+
+//  line Chart 1 CSS Ends
+
+.shadow {
+  -webkit-filter: drop-shadow( 0px 25px 8px rgba(0,0,0,0.3) );
+    filter: drop-shadow( 0px 25px 8px rgba(0,0,0,0.3) ); /* Same syntax as box-shadow, except for the spread property */
+}
+
+// LineArea Chart 5 CSS Starts
+.lineChart1{
+  .ct-series-a{
+    .ct-area {
+      fill-opacity: 1;
+      fill:url(#gradientChart) !important;
+    }
+  }
+}
+
+.lineChart1 .ct-line{
+  stroke-width: 0px;
+}
+.lineChart1 .ct-series-a .ct-point-circle {     
+   fill:#a389d1;stroke-width:3;stroke:rgba(186,191,199,0.3);
+}
+
+.lineChart1 .ct-series-a .ct-point-circle-transperent {     
+  fill: transparent;
+}
+
+// LineArea Chart 5 CSS Ends

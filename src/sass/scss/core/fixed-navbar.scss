@@ -1,0 +1,111 @@
+// Navbar
+.navbar{
+	position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 4;
+    background-color: #FFF;
+    padding: 0.5rem 1.5rem;
+    @include card-shadow();
+	.dropdown-menu{
+		border: none;
+		box-shadow: 2px 0px 20px 2px rgba(64, 70, 74, 0.25) !important;
+		margin-top: 1.4rem;
+	}
+	&.navbar-light{
+		.nav-link {
+	    	color: rgba(0, 0, 0, 0.5);
+	    }
+	}
+}
+
+// Sidebar z-index
+.app-sidebar{
+	z-index: 5;
+}
+
+// main pannel top margin
+.main-panel{
+	margin-top: 85px;
+}
+
+// Fixed Navbar CSS modification
+.navbar{
+	.show {
+	    >.dropdown-menu {
+	        .arrow_box_right {
+	            position: relative;
+	            &:after {
+	                bottom: 101%;
+	                right: 0.5rem;
+	                border: solid transparent;
+	                content: " ";
+	                height: 0;
+	                width: 0;
+	                position: absolute;
+	                pointer-events: none;
+	                border-color: rgba(136, 183, 213, 0);
+	                border-bottom-color: $white;
+	                border-width: 16px;
+	                margin-left: -16px;
+	            }
+	        }
+	        .arrow_box {
+	            position: relative;
+	            &:after {
+	                bottom: 101%;
+	                left: 1.8rem;
+	                border: solid transparent;
+	                content: " ";
+	                height: 0;
+	                width: 0;
+	                position: absolute;
+	                pointer-events: none;
+	                border-color: rgba(136, 183, 213, 0);
+	                border-bottom-color: $white;
+	                border-width: 16px;
+	                margin-left: -16px;
+	            }
+	        }
+	        &.notification-dropdown{
+	        	.arrow_box_right {
+		            &:after {
+		                right: 1rem;
+	                	bottom: 100%;
+		                border-width: 10px;
+		            }
+		        }
+		        .arrow_box {
+		            &:after {
+	                	bottom: 100%;
+		                left: 1.8rem;
+		                border-width: 10px;
+		            }
+		        }
+	        }
+	    }
+	}
+
+	.dropdown-submenu {
+	    &.show {
+	        .arrow_box {
+	            position: relative;
+	            &:after {
+	                bottom: 100%; // left: 1.8rem;          
+	                top: 7px;
+	                border: solid transparent;
+	                content: " ";
+	                height: 0;
+	                width: 0;
+	                position: absolute;
+	                pointer-events: none;
+	                margin-left: -41px;
+	                border-top: 10px solid transparent;
+	                border-bottom: 10px solid transparent;
+	                border-right: 13px solid $white;
+	            }
+	        }
+	    }
+	}
+}

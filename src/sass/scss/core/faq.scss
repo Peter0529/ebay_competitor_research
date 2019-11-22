@@ -1,0 +1,19 @@
+// Faqs
+.faq{
+	.accordion{
+		.card{
+			border-bottom: 1px solid theme-color("secondary");
+			border-radius: 0;
+			a{
+				color: theme-color("info");
+				cursor: pointer;
+			}
+			i{
+				color: theme-color("danger");
+			}
+			&:last-child{
+				border-bottom: none;
+			}
+		}
+	}
+}

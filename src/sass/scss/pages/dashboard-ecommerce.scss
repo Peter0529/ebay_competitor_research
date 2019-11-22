@@ -1,0 +1,179 @@
+// Dashboard ecommerce style
+.ct-grid{
+    stroke-dasharray: 0px;
+    stroke: rgba(0, 0, 0, 0.1);
+}
+
+.ct-labels{
+  .ct-label{
+    font-size: 0.9rem;
+    color: rgba(0,0,0,.4);
+  }
+}
+
+// Line Chart CSS Starts
+.lineChart{
+  .ct-series{
+    &.ct-series-a{
+      .ct-line { stroke: url(#linear1) !important; stroke-width: 5px; }
+      .ct-circle{fill:url(#linear1) !important;stroke-width:5;stroke:#fff;}
+      .ct-circle-transperent{fill:transparent;stroke-width:0}
+    }
+  }
+  .ct-labels{
+    .ct-label{
+      color: rgba(0,0,0,.4);
+    }
+  }
+  &.lineChartShadow {
+      -webkit-filter: drop-shadow( 0px 20px 6px rgba(0,0,0,0.3) );
+              filter: drop-shadow( 0px 20px 6px rgba(0,0,0,0.3) ); /* Same syntax as box-shadow, except 
+                                                         for the spread property */
+  }
+}
+// Line Chart CSS Ends
+
+
+// Stack Bar Chart CSS Starts
+.Stackbarchart{
+    .ct-series-a {
+        .ct-bar{
+            stroke: url(#StackbarGradient);
+        }
+        .ct-slice-bar{
+            fill: url(#StackbarGradient);
+            stroke: transparent;
+        }
+    }
+}
+// Stack Bar Chart CSS Ends
+ 
+// Donut Chart  CSS Ends
+.donut .ct-done .ct-slice-donut-solid {
+  fill: url(#donutGradient1);
+  // stroke-width: 28px !important;
+}
+.donut .ct-progress .ct-slice-donut-solid {
+  fill: url(#donutGradient2);
+  // stroke-width: 24px !important;
+}
+.donut .ct-outstanding .ct-slice-donut-solid {
+  fill: url(#donutGradient3);
+  // stroke-width: 24px !important;
+}
+.donut .ct-label {
+  text-anchor: middle;
+  alignment-baseline: middle;
+  font-size: 20px;
+  fill: #868e96;
+}
+.donut .ct-chart-donut .ct-series {
+  stroke: #fff;
+  stroke-width: 3px;
+}
+.donutShadow{
+  -webkit-filter: drop-shadow( 0px 20px 8px rgba(0,0,0,0.3) );
+  filter: drop-shadow( 0px 20px 8px rgba(0,0,0,0.3) ); /* Same syntax as box-shadow, except 
+                                             for the spread property */
+}
+// Donut Chart  CSS Ends
+
+// Bar Chart CSS Starts
+.BarChart{
+  .ct-series-a{
+    .ct-bar:nth-of-type(5n+1),
+    .ct-slice-bar:nth-of-type(5n+1) {
+      stroke: url(#gradient7);
+      fill: url(#gradient7);
+    }
+    .ct-bar:nth-of-type(5n+2) , 
+    .ct-slice-bar:nth-of-type(5n+2) {
+      stroke: url(#gradient5);
+      fill: url(#gradient5);
+    }
+    .ct-bar:nth-of-type(5n+3),  
+    .ct-slice-bar:nth-of-type(5n+3) {
+      stroke: url(#gradient6);
+      fill: url(#gradient6);
+    }
+    .ct-bar:nth-of-type(5n+4),  
+    .ct-slice-bar:nth-of-type(5n+4) {
+      stroke: url(#gradient4);
+      fill: url(#gradient4);
+    }
+    .ct-bar:nth-of-type(5n+5),  
+    .ct-slice-bar:nth-of-type(5n+5) {
+      stroke: url(#gradient8);
+      fill: url(#gradient8);
+    }
+  }
+}
+.BarChartShadow {
+  -webkit-filter: drop-shadow( 0px 20px 8px rgba(0,0,0,0.3) );
+          filter: drop-shadow( 0px 20px 8px rgba(0,0,0,0.3) ); /* Same syntax as box-shadow, except 
+                                                       for the spread property */
+}
+// Bar Chart CSS Ends
+
+
+
+// Widget area Chart CSS Starts
+.lineChartWidget {
+  .ct-series-a{
+    .ct-area {
+      fill-opacity: 1;
+    }
+    .ct-line{
+      stroke-width: 0px;
+    }
+    .ct-point-circle {     
+      fill:#fff;stroke-width:10;stroke: #8249e8;
+    }
+    .ct-point-circle-transperent {
+      fill: transparent;
+    }
+
+    .ct-target-line {
+      stroke: #fff;
+      stroke-width: 2px;
+      stroke-dasharray: 4px;
+    }
+  }
+}
+.WidgetlineChart {
+  .ct-series-a{
+    .ct-area {
+      fill:url(#wGradient) !important;
+    }
+    .ct-point-circle {     
+      stroke: #8249e8;
+    }
+  }
+}
+// Widget area 1 Chart CSS Ends
+.WidgetlineChart1 {
+  .ct-series-a{
+    .ct-area {
+      fill:url(#wGradient1) !important;
+    }
+    .ct-point-circle {     
+      stroke: #fa5b4c;
+    }
+  }
+}
+.ct-target-line {
+  stroke: #fff;
+  stroke-width: 2px;
+  stroke-dasharray: 4px;
+}
+.WidgetlineChart2 {
+  .ct-series-a{
+    .ct-area {
+      fill:url(#wGradient2) !important;
+    }
+    .ct-point-circle {     
+      stroke: #19667d;
+    }
+  }
+}
+// Widget line Chart CSS Ends

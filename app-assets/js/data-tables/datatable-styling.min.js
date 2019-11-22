@@ -1,0 +1,1 @@
+!function(a,t,e){"use strict";e(t).ready(function(){e(".base-style").DataTable(),e(".no-style-no").DataTable(),e(".compact").DataTable(),e(".bootstrap-3").DataTable()})}(window,document,jQuery);
